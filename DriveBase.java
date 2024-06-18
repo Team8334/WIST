@@ -10,10 +10,11 @@ public class DriveBase {
     // WPI_VictorSPX mockMotor;
 
     public DriveBase() {
-        this.frontLeftMotor = new WPI_VictorSPX(0);
-        this.frontRightMotor = new WPI_VictorSPX(0);
-        this.backLeftMotor = new WPI_VictorSPX(0);
-        this.backRighttMotor = new WPI_VictorSPX(0);
+        this.frontLeftMotor = new WPI_VictorSPX(10);
+        this.backLeftMotor = new WPI_VictorSPX(1);
+        
+        this.frontRightMotor = new WPI_VictorSPX(3);
+        this.backRighttMotor = new WPI_VictorSPX(2);
 
         // this.mockMotor = new WPI_VictorSPX(0);
     }
