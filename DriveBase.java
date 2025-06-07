@@ -18,6 +18,8 @@ public class DriveBase {
     }
 
     public void move() {
+        this.m_backLeftDrive.set(-1);
+        this.m_leftFrontDrive.set(-1);
     }
 
     public void goBackwards() {
