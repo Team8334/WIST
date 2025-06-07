@@ -5,10 +5,6 @@ Women in STEM Camp
 ### Copying Three Files
 Copy the ButtonMap.java, Controller.java, and DriveBase.java into src\main\java\frc\robot of your project. You can do this either by cloning this github repo and copying it over OR creating a new file titled those file names and then copying and pasting the contents into the file.
 
-
-### Installing Dependencies
-Install the needed dependencies by selecting the WPILib icon again and selected Manage Vendor Libraries > Install New Libraries > CTRE Phoenix 5.
-
 ## Setting up Robot.java
 In Robot.java of your project, add the followign two lines right below line 21.
 ```

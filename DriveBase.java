@@ -1,34 +1,29 @@
 package frc.robot;
 
-import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
+import com.revrobotics.spark.SparkMax;
+import com.revrobotics.spark.SparkLowLevel.MotorType;
 
 public class DriveBase {
-    WPI_VictorSPX frontLeftMotor;
-    WPI_VictorSPX frontRightMotor;
-    WPI_VictorSPX backLeftMotor;
-    WPI_VictorSPX backRighttMotor;
-    // WPI_VictorSPX mockMotor;
+    // THESE Numbers might need updated
+    private frontLeftMotorCadId = 0;
+    private backLeftMotorCadId = 1;
+    private frontRightMotorCadId = 2;
+    private backRightMotorCadId = 3;
+
+    private final SparkMax  m_leftFrontDrive = new SparkMax (frontLeftMotorCadId, MotorType.kBrushless);
+    private final SparkMax  m_backLeftDrive = new SparkMax (backRightMotorCadId, MotorType.kBrushless);
 
     public DriveBase() {
-        this.frontLeftMotor = new WPI_VictorSPX(10);
-        this.backLeftMotor = new WPI_VictorSPX(1);
-        
-        this.frontRightMotor = new WPI_VictorSPX(3);
-        this.backRighttMotor = new WPI_VictorSPX(2);
 
-        // this.mockMotor = new WPI_VictorSPX(0);
     }
 
-    public void stop() {
-        // this.mockMotor.set(0);
+    public void move() {
     }
 
     public void goBackwards() {
-        // this.mockMotor.set(-1);
     }
 
     public void goForwards() {
-        // this.mockMotor.set(1);
     }
 
     
