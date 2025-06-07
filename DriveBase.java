@@ -5,10 +5,10 @@ import com.revrobotics.spark.SparkLowLevel.MotorType;
 
 public class DriveBase {
     // THESE Numbers might need updated
-    private frontLeftMotorCadId = 0;
-    private backLeftMotorCadId = 1;
-    private frontRightMotorCadId = 2;
-    private backRightMotorCadId = 3;
+    private Integer frontLeftMotorCadId = 0;
+    private Integer backLeftMotorCadId = 1;
+    private Integer frontRightMotorCadId = 2;
+    private Integer backRightMotorCadId = 3;
 
     private final SparkMax  m_leftFrontDrive = new SparkMax (frontLeftMotorCadId, MotorType.kBrushless);
     private final SparkMax  m_backLeftDrive = new SparkMax (backRightMotorCadId, MotorType.kBrushless);

@@ -79,9 +79,9 @@ public class Controller extends XboxController {
                     case XboxSTART:
                         return xboxController.getStartButton();
                     case XboxLEFTBumper:
-                        return xboxController.getLeftBumper();
+                        return xboxController.getLeftBumperPressed();
                     case XboxRIGHTBumper:
-                        return xboxController.getRightBumper();
+                        return xboxController.getRightBumperPressed();
                     case XboxLEFTSTICKBUTTON:
                         return xboxController.getLeftStickButton();
                     case XboxRIGHTSTICKBUTTON:
