@@ -14,8 +14,8 @@ public class DriveBase {
     private Integer frontRightMotorCadId = 2;
     private Integer backRightMotorCadId = 3;
 
-    private final SparkMax  m_leftFrontDrive = new SparkMax (frontLeftMotorCadId, MotorType.kBrushless);
-    private final SparkMax  m_backLeftDrive = new SparkMax (backRightMotorCadId, MotorType.kBrushless);
+    private final NEOSparkMax  m_leftFrontDrive = new NEOSparkMax (frontLeftMotorCadId, MotorType.kBrushless);
+    private final NEOSparkMax  m_backLeftDrive = new NEOSparkMax (backRightMotorCadId, MotorType.kBrushless);
 
     // distance of wheels from center in meters
     Translation2d m_frontLeftLocation = new Translation2d(0.381, 0.381); // these are not actually measured
